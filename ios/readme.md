@@ -4,7 +4,7 @@ Titanium module to handle Network Operations with high performance using synchro
 
 # Installing
 
-1. Download this project and open the .zip file in /ios/dist folder, then copy it's content to your project in the correct folder structure. The path will look like the following: `modules/iphone/net.davidmartins.tipdf/2.3.1`
+1. Download this project and open the .zip file in /ios/dist folder, then copy it's content to your project in the correct folder structure. The path will look like the following: `modules/iphone/net.davidmartins.net/0.0.1`
 2. Open Studio, and the `tiapp.xml` file for the project in question.
 3. Switch to the `tiapp.xml` tab.
 4. In the application's `tiapp.xml`, find the `<modules/>` node, and replace it with the new `<modules>` content. If you already have modules, just add a new node for the Ti PDF module. Note that the "version" and "platform" attributes are optional. When "version" is not specified, the latest version of the module will be used (as of Titanium SDK 2.0.0).
@@ -17,7 +17,7 @@ Titanium module to handle Network Operations with high performance using synchro
 ```javascript
 var DVNetwork = require('net.davidmartins.net');
 ```
-6. The next time the app is launched or built, Ti PDF should be included with the application.
+6. The next time the app is launched or built, TiDVNetwork should be included with the application.
 
 ## Prerequisites
 
@@ -33,8 +33,6 @@ First of all, load the module.
 var DVNetwork = require('net.davidmartins.net');
 ```
 
-Then set the properties of your PDF and start drawing. To save call the savePDF function.
-
 ## Methods
 
 All parameters with `*` are required.
@@ -43,7 +41,7 @@ All parameters with `*` are required.
 ```javascript
 var file = Ti.Filesystem.getFile(Ti.Filesystem.applicationDataDirectory, 'myfile.jpg');
 
-var response = DVNetwork.quickSmallFileDownload('https://davidmartins.net/wp-content/themes/davidmartins/img/imageindex.jpg', file);
+var response = DVNetwork.quickSmallFileDownload('https://davidmartins.net/wp-content/themes/davidmartins/img/imageindex.jpg', file.resolve());
 
 if(response != null || response != "") {
 	Ti.API.error('Error download file: ' + response);
@@ -74,7 +72,7 @@ Happy Coding!
 
 # License
 
-Ti DVNetwork is licensed under MIT.
+TiDVNetwork is licensed under MIT.
 
 ```
  Copyright (c) 2018-2020 David Martins dos Anjos
