@@ -1,0 +1,18 @@
+#
+# this is your module manifest and used by Titanium
+# during compilation, packaging, distribution, etc.
+#
+version: 0.0.1
+apiversion: 2
+architectures: armv7 arm64 i386 x86_64
+description: Module to handle network interactions for high performance apps.
+author: Dave McMartin
+license: MIT
+copyright: © 2020 David Martins dos Anjos
+
+# these should not be edited
+name: TiDVNetwork
+moduleid: net.davidmartins.net
+guid: 5f04644b-9b11-47eb-8ac3-f5745024afa0
+platform: iphone
+minsdk: 7.5.0.GA
