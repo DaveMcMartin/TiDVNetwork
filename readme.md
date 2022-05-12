@@ -1,3 +1,7 @@
+# Axway Appcelerator End-of-Support Notice
+
+Axway announced [End-of-Support for the Titanium SDK](https://devblog.axway.com/featured/product-update-changes-to-application-development-services-appcelerator/) effective 1 March 2022. I stopped updating and supporting the TiPDF for iOS Titanium Module as of 1 March 2021. The module is open source, so if you require more time to transition to a different platform, it can still be updated and customized to your needs.
+
 # Ti DVNetwork
 
 Titanium module to handle Network Operations with high performance using synchronous calls.
@@ -65,8 +69,7 @@ Returns `String` - The URL contents
 # Built With
 
 * [Axway Appcelerator Titanium](https://www.appcelerator.com/) - Mobile Development Platform
-* [XCode](https://developer.apple.com/xcode/) - iOS IDE
-* [Quartz 2D](https://developer.apple.com/library/content/documentation/GraphicsImaging/Conceptual/drawingwithquartz2d/Introduction/Introduction.html) - iOS 2D Native Rendering Framework
+* [XCode](https://developer.apple.com/xcode/) - iOS IDEFramework
 
 Happy Coding!
 
